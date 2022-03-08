@@ -1,6 +1,6 @@
 export const SET_DEALS = 'SET_DEALS';
 
-export let initialState = {
+let initialState = {
     deals: []
 }
 

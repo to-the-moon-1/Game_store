@@ -1,5 +1,5 @@
 import {combineReducers, createStore} from "redux";
-import storesReducer from "./store-reducers";
+import storesReducer from "./stores-reducer";
 import gamesReducer from "./games-reducer";
 import dealsReducer from "./deals-reducer";
 
