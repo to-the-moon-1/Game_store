@@ -1,21 +1,21 @@
-/*ALL PAGE*/
+/* ALL PAGE */
 
 * {
   letter-spacing: 1px;
 }
 
 .colorGray {
-  color: gray;
+  color: #808080;
 }
 
 .backgroundPage {
+  background-color: #6495ed;
   padding: 0 16%;
-  background-color: cornflowerblue;
 }
 
 .wrapperContent {
+  background-color: #fffafa;
   padding: 80px 70px;
-  background-color: snow;
 }
 
 .header {
@@ -24,18 +24,16 @@
   margin-top: 45px;
 }
 
-
-
-/*INPUT SEARCH*/
+/* INPUT SEARCH */
 
 .mainBtn.searchBtn {
-  margin: 0;
-  height: 40px;
-  width: 100%;
+  background-color: #f08080;
+  border-color: #f08080;
   border-radius: 0 3px 3px 0;
-  background-color: lightcoral;
-  border-color: lightcoral;
   font-weight: bold;
+  height: 40px;
+  margin: 0;
+  width: 100%;
 }
 
 .mainBtn.searchBtn:hover {
@@ -44,42 +42,41 @@
 }
 
 .inputText.searchText {
-  width: 100%;
-  height: 40px;
-  border-radius: 3px 0 0 3px;
   background-color: unset;
+  border-radius: 3px 0 0 3px;
+  height: 40px;
+  width: 100%;
 }
 
-.inputText.searchText:hover, .inputText.searchText:focus {
+.inputText.searchText:hover,
+.inputText.searchText:focus {
   border-color: #fa8e8e;
 }
 
 .inputText.searchText:focus {
-  outline-color: #fa8e8e;
   box-shadow: 0 0 0 2px #ff787533;
+  outline-color: #fa8e8e;
 }
 
-
-
-/*STORES*/
+/* STORES */
 
 .cardStore {
   background-color: unset;
-  border: 1px solid gainsboro;
-  padding: 15px 30px;
-  margin-top: 15px;
+  border: 1px solid #dcdcdc;
   border-radius: 3px;
+  margin-top: 15px;
+  padding: 15px 30px;
 }
 
 .checkbox {
-  justify-items: center;
-  justify-content: center;
-  width: 15px;
-  height: 15px;
   float: right;
-  text-align: right;
+  height: 15px;
+  justify-content: center;
+  justify-items: center;
   margin-top: 3px;
-  opacity: .5;
+  opacity: 0.5;
+  text-align: right;
+  width: 15px;
 }
 
 .storeImg {
@@ -90,23 +87,19 @@
   margin-left: -15px;
 }
 
-
-
-/*GAMES*/
+/* GAMES */
 
 .gameList {
   margin-top: 10px;
 }
 
-
-
-/*DEALS*/
+/* DEALS */
 
 .dealCard {
-  margin-top: 15px;
-  height: 54px;
+  border: 1px solid #dcdcdc;
   border-radius: 3px;
-  border: 1px solid gainsboro;
+  height: 54px;
+  margin-top: 15px;
   overflow: hidden;
 }
 
@@ -115,9 +108,9 @@
 }
 
 .dealImg {
-  width: 120px;
-  height: 100%;
   border-radius: 3px 0 0 3px;
+  height: 100%;
+  width: 120px;
 }
 
 .centerAlign {
@@ -129,6 +122,6 @@
 }
 
 .leftAlign {
-  text-align: left;
   padding-left: 15px;
+  text-align: left;
 }

@@ -1,19 +1,19 @@
 export const SET_DEALS = 'SET_DEALS';
 
-let initialState = {
-    deals: []
-}
+const initialState = {
+  deals: [],
+};
 
 const dealsReducer = (state = initialState, action) => {
-    switch (action.type) {
-        case SET_DEALS: {
-            return {...state, deals: action.deals}
-        }
-        default:
-            return state
+  switch (action.type) {
+    case SET_DEALS: {
+      return { ...state, deals: action.deals };
     }
-}
+    default:
+      return state;
+  }
+};
 
-export const setDealsAC = (deals) => ({type: SET_DEALS, deals})
+export const setDealsAC = deals => ({ type: SET_DEALS, deals });
 
-export default dealsReducer
+export default dealsReducer;

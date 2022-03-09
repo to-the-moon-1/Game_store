@@ -1,11 +1,11 @@
-import {useState} from "react";
+import { useState } from 'react';
 
 const useTitle = () => {
-    let [title, setTitle] = useState('')
+  const [title, setTitle] = useState('');
 
-    const handleChange = (e) => setTitle(e.target.value)
+  const handleChange = e => setTitle(e.target.value);
 
-    return [ title, handleChange ]
-}
+  return [title, handleChange];
+};
 
-export default useTitle
+export default useTitle;
