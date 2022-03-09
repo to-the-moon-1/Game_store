@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-const useGames = () => {
+const useTitle = () => {
     let [title, setTitle] = useState('')
 
     const handleChange = (e) => setTitle(e.target.value)
@@ -8,4 +8,4 @@ const useGames = () => {
     return [ title, handleChange ]
 }
 
-export default useGames
+export default useTitle

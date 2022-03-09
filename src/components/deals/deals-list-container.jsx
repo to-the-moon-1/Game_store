@@ -1,15 +1,18 @@
-import {connect} from "react-redux";
-import {setDealsAC} from "../../redux/deals-reducer";
-import DealsList from "./DealsList";
 import {useEffect} from "react";
+import {connect} from "react-redux";
 import axios from "axios";
+
+import {setDealsAC} from "../../redux/deals-reducer";
 import {URL} from "../../api/api";
+
+import DealsList from "./deals-list";
 
 const DealListContainer = ({stores, checkedStore, games, title, deals, setDeals}) => {
     const storeData = stores.map((store, id) => {
         if(store.checked === true) {
             return id + 1
         }
+        return null
     })
     const isStore = storeData.filter(store => store !== undefined).join()
 

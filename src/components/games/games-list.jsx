@@ -1,17 +1,18 @@
 import React from "react";
-import StoresListContainer from "../stores/StoresListContainer";
 import { Layout } from 'antd';
-import InputSearch from "../input/InputSearch";
+
+import StoresListContainer from "../stores/stores-list-container";
+import InputSearch from "../input/input-search";
 
 const { Content } = Layout;
 
 const GamesList = ({ title, handleChange, searchGamesOnTitle, games }) => (
     <Layout>
-        <Content className="background">
-            <div className="wrapper">
+        <Content className="backgroundPage">
+            <div className="wrapperContent">
                 <InputSearch title={title} handleChange={handleChange} searchGamesOnTitle={searchGamesOnTitle} />
                 <div className="colorGray">
-                    <h1>Games</h1>
+                    <h1 className="header">Games</h1>
                     {games.length !== 0
                         ? games.map(game => <div key={"id_" + game.gameID}>
                             <div className="gameList">{game.external}</div>

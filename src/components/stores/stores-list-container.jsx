@@ -1,9 +1,11 @@
-import {connect} from "react-redux";
-import {setActiveStoresAC, setNoActiveStoresAC, setStoresAC} from "../../redux/stores-reducer";
-import StoresList from "./StoresList";
 import {useEffect} from "react";
+import {connect} from "react-redux";
 import axios from "axios";
+
+import {setActiveStoresAC, setNoActiveStoresAC, setStoresAC} from "../../redux/stores-reducer";
 import {URL} from "../../api/api";
+
+import StoresList from "./stores-list";
 
 const StoresListContainer = ({activeStores, noActiveStores, setStores, stores, title, games}) => {
     const checkedStore = stores.some(store => store.checked === true)

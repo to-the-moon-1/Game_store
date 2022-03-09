@@ -1,11 +1,12 @@
 import React from "react";
-import DealsListContainer from "../deals/DealsListContainer";
 import {Col, Row} from "antd";
+
+import DealsListContainer from "../deals/deals-list-container";
 
 const StoresList = ({activeStores, noActiveStores, checkedStore, stores, title, games}) => (
     <div>
         <Row>
-            <h1>Stores</h1>
+            <h1 className="header">Stores</h1>
         </Row>
         {stores.map((store, id) => <Row className="cardStore" key={"id_" + store.storeID}>
             <Col span={1}>
@@ -17,7 +18,7 @@ const StoresList = ({activeStores, noActiveStores, checkedStore, stores, title, 
             </Col>
 
             <Col span={1}>
-                <input style={{borderColor: "red"}} className="checkbox" type="checkbox" onChange={() => {
+                <input className="checkbox" type="checkbox" onChange={() => {
                     store.checked
                     ? noActiveStores(id)
                     : activeStores(id)

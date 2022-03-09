@@ -33,7 +33,7 @@ const DealsList = ({deals}) => {
 
     return <div>
         <Row>
-            <h1>Deals</h1>
+            <h1 className="header">Deals</h1>
         </Row>
         {deals.length !== 0
             ? dealsList
